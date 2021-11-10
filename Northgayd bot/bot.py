@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import os
-from datetime import datetime, date, time
 
 client = commands.Bot(command_prefix = "!", intents = discord.Intents.all())
 
@@ -45,4 +44,4 @@ for filename in os.listdir("./cogs"):
 		client.load_extension(f"cogs.{filename[:-3]}")
 
 
-client.run("NzcxNzQ4MzU5NzgxNDgyNTA2.X5woqw.lwiZ223h_hc85Gf6Rx5JtoVT0aQ")
+client.run("TOKEN")
